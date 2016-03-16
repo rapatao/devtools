@@ -1,0 +1,29 @@
+description: Java SE Development Kit (JDK)
+directory: java
+artifacts:
+  - version: 1.8.0_51
+    platforms:
+      - name: x64
+        urls:
+          - file://
+          - http://
+      - name: x32
+        urls:
+          - file://
+          - http://
+    install:
+      - ln -sf ${INSTALL_DIR} /usr/local/opt/java8
+    post-install-message: |
+      Java ${} installed at ${INSTALL_DIR}
+      and linked to /usr/local/opt/java8
+
+  - version: 1.7.0_51
+    platform: x32
+    mirrors:
+          - url: file://
+          - url: http://
+        install:
+          - ln -sf ${INSTALL_DIR} /usr/local/opt/java8
+        post-install-message: |
+          Java 1.8.0_51_x64 installed at ${INSTALL_DIR}
+          and linked to /usr/local/opt/java8
