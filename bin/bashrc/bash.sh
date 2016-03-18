@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export TERM=linux
 
 rm -rf ${HOME}/.bash_profile;
