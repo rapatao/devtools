@@ -4,7 +4,7 @@ source /usr/local/devtools/lib/executors.sh
 
 function _main() {
     executeAllOnFolder "/usr/local/devtools/bin/config/*.sh";
-    source /usr/local/devtools/bin/config-bashrc.sh;
+    source /usr/local/devtools/bin/load-bashrc.sh;
 }
 
 _main;

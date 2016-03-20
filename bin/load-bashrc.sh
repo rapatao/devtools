@@ -2,9 +2,9 @@
 
 source /usr/local/devtools/lib/executors.sh
 
-function _main() {
+function _loadBashrc() {
     executeAllOnFolder "/usr/local/devtools/bin/bashrc/*.sh";
 }
 
-_main;
-unset _main;
+_loadBashrc;
+unset _loadBashrc;

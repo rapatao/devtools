@@ -2,7 +2,7 @@
 
 source /usr/local/devtools/lib/executors.sh
 
-function _configureAliases() {
+function _loadAliases() {
     # default aliases files
     mkdir -p /usr/local/etc/devtools/;
     executeAllOnFolder /usr/local/etc/devtools/*.alias;
@@ -12,5 +12,5 @@ function _configureAliases() {
     executeAllOnFolder ${HOME}/.devtools/*.alias;
 }
 
-_configureAliases;
-unset _configureAliases;
+_loadAliases;
+unset _loadAliases;

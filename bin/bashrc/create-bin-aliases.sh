@@ -1,6 +1,7 @@
 #!/bin/bash
 
 function _createAliasForFiles() {
+
     for file in ${1}; do
         name=${file##*/}
         name=${name%.*}
