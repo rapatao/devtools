@@ -3,12 +3,14 @@
 source /usr/local/devtools/lib/message.sh;
 
 DEFAULT_CONFIG_ORI="/usr/local/devtools/etc/default-config";
-DEFAULT_CONFIG_BIN="${HOME}/.devtools/bin";
+DEFAULT_CONFIG_BIN="${HOME}/.devtools/bin/default-config";
 DEFAULT_CONFIG_ETC="${HOME}/.devtools/etc/default-config";
 DEFAULT_CONFIG="${HOME}/.devtools";
 
 function _copyFilesToDevtoolsEtc() {
+	rm -rf ${DEFAULT_CONFIG_BIN};
 	rm -rf ${DEFAULT_CONFIG_ETC};
+	mkdir -p ${DEFAULT_CONFIG_BIN};
 	mkdir -p ${DEFAULT_CONFIG_ETC};
 	cp -f ${DEFAULT_CONFIG_ORI}/.[^.]* ${DEFAULT_CONFIG_ETC}/ 2>/dev/null;
 	cp -f ${DEFAULT_CONFIG_ORI}/*.alias ${DEFAULT_CONFIG}/ 2>/dev/null;
