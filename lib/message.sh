@@ -2,7 +2,7 @@
 
 source /usr/local/devtools/lib/colors.sh;
 
-function _message() {
+function message() {
     declare -A COLORSOPTS;
     COLORSOPTS["h"]="${YELLOW}%s${CRESET}";
     COLORSOPTS["i"]="[ ${CYAN}..${CRESET} ] %s";
@@ -35,6 +35,3 @@ function _message() {
 
     printf "\r\033[2K  ${msg}${lf}";
 }
-
-_message "$@";
-unset _message;
