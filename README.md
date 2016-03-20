@@ -7,7 +7,7 @@ Created to provide a basic, extensible and easily development environment initia
 The package must be installed in the folder **/usr/local/devtools**
 
 ```bash
-git clone https://github.com/rascorp/devtools.git
+git clone https://github.com/rascorp/devtools.git /usr/local/devtools
 ```
 
 ## Configuration
