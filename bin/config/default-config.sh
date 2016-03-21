@@ -7,5 +7,5 @@ read -n 1 -e option;
 
 response=${option,,}    # tolower
 if [[ $response =~ ^(yes|y|)$ ]]; then
-	/usr/local/devtools/etc/default-config/install-default-config.sh;
+	source /usr/local/devtools/etc/default-config/install.sh;
 fi
