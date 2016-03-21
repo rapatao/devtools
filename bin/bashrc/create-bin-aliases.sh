@@ -1,6 +1,7 @@
 #!/bin/bash
 
 function _createAliasForFiles() {
+
     for file in ${1}; do
         name=${file##*/}
         name=${name%.*}
@@ -11,14 +12,14 @@ function _createAliasForFiles() {
 function _createBinAlias() {
     # default bin files
     mkdir -p /usr/local/bin/devtools/;
-    _createAliasForFiles /usr/local/bin/devtools/*;
+    _createAliasForFiles /usr/local/bin/devtools/**/*;
 
     # user bin files
     mkdir -p ${HOME}/.devtools/bin/;
-    _createAliasForFiles ${HOME}/.devtools/bin/*;
+    _createAliasForFiles ${HOME}/.devtools/bin/**/*;
 }
 
-_createBinAlias;
+# _createBinAlias;
 
 unset _createBinAlias;
 unset _createAliasForFiles;
