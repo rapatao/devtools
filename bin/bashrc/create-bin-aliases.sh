@@ -12,11 +12,11 @@ function _createAliasForFiles() {
 function _createBinAlias() {
     # default bin files
     mkdir -p /usr/local/bin/devtools/;
-    _createAliasForFiles /usr/local/bin/devtools/**/*;
+    _createAliasForFiles "/usr/local/bin/devtools/**/*";
 
     # user bin files
     mkdir -p ${HOME}/.devtools/bin/;
-    _createAliasForFiles ${HOME}/.devtools/bin/**/*;
+    _createAliasForFiles "${HOME}/.devtools/bin/**/*";
 }
 
 # _createBinAlias;
