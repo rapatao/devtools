@@ -5,4 +5,3 @@ function executeAllOnFolder() {
         [ -r "$file" ] && [ -f "$file" ] && source "$file";
     done;
 }
-
