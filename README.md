@@ -2,12 +2,14 @@
 
 Created to provide a basic, extensible and easily development environment initially for Cygwin.
 
+This version is a fork of https://github.com/rapatao/devtools and has fixes for some problems that occurred when running on Ubuntu.
+
 ## Installation
 
 The package must be installed in the folder **/usr/local/devtools**
 
 ```bash
-git clone https://github.com/rascorp/devtools.git /usr/local/devtools
+git clone https://github.com/rapatao/devtools.git /usr/local/devtools
 ```
 
 ## Configuration
