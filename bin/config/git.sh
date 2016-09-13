@@ -1,6 +1,5 @@
 #!/bin/bash
 
-source /usr/local/devtools/lib/os.sh;
 source /usr/local/devtools/lib/message.sh;
 
 function _configureGit() {
