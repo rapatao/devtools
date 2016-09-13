@@ -2,7 +2,7 @@
 
 Created to provide a basic, extensible and easily development environment initially for Cygwin.
 
-This version is a fork of https://github.com/rapatao/devtools and has fixes for some problems that occurred when running on Ubuntu.
+This version is a fork of https://github.com/rascorp/devtools and has fixes for some problems that occurred when running on Ubuntu.
 
 ## Installation
 
