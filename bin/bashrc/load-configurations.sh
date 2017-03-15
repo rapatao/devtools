@@ -2,7 +2,6 @@
 
 function _loadConfigurations() {
     # default configuration files
-    mkdir -p /usr/local/etc/devtools/;
     executeAllOnFolder "/usr/local/etc/devtools/*.config";
 
     # user configuration files

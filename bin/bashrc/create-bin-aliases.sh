@@ -11,7 +11,6 @@ function _createAliasForFiles() {
 
 function _createBinAlias() {
     # default bin files
-    mkdir -p /usr/local/bin/devtools/;
     _createAliasForFiles "/usr/local/bin/devtools/**/*";
 
     # user bin files
@@ -19,7 +18,7 @@ function _createBinAlias() {
     _createAliasForFiles "${HOME}/.devtools/bin/**/*";
 }
 
-# _createBinAlias;
+_createBinAlias;
 
 unset _createBinAlias;
 unset _createAliasForFiles;

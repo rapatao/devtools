@@ -24,6 +24,8 @@ function _linkDefaultConfigAliasConfig() {
 }
 
 function _defaultConfig() {
+	sudo mkdir -p /usr/local/etc/devtools/;	
+	sudo mkdir -p /usr/local/bin/devtools/;
 	mkdir -p "${DEFAULT_CONFIG}";
 	rm -f ${DEFAULT_CONFIG}/default-config*.*
 
